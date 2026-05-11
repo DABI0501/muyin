@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUYIN</title>
+    <link rel="stylesheet" href="muyin.css">
+    <link rel="icon" href="image/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+    
+</head>
+<body>
+
+    <div class="container">
+        
+        <header class="navbar">
+            <div class="profile-info">
+                <span class="user-icon">👤</span>
+                <span class="user-id">@CHZZK_MUYIN</span>
+            </div>
+            <nav class="menu">
+                <a href="#" class="active">Home</a>
+                <a href="https://www.youtube.com/channel/UCvcucGqB3OjSKq55j_ed4tw">Youtube</a>
+                <a href="https://chzzk.naver.com/2fbcc99a2def03a177ba186835f0d49d/community">Community</a>
+            </nav>
+            <div class="auth-buttons">
+                <a href="https://chzzk.naver.com/2fbcc99a2def03a177ba186835f0d49d" target="_blank">
+                    <button class="btn-login">CHZZK</button>
+                </a>
+                <a href="https://discord.gg/Fm2NujnjWk" target="_blank" style="text-decoration: none;">
+                    <button class="btn-signup">DISCORD</button>
+                </a>
+            </div>
+        </header>
+
+        <section class="main-banner">
+            <div class="banner-content">
+                <div class="logo-area">
+                    <span>MUYIN'S introduction</span>
+                    <img src="image/hamster.png" alt="햄찌icon" class="logo-icon">
+                </div>
+                <h1 class="main-title">MUYIN</h1>
+                <p class="description">
+                    "해피 2주년! 햄찌의 포근함처럼 따스했던 뮤인이와의 모든 순간이 소중해요.<br>
+                    3주년, 10주년까지 찰떡같이 곁에 있을게요. 늘 고맙고 사랑합니다!"
+                </p>
+                <a href="#" class="read-more">2nd Anniversary Fan Letter ➜</a>
+            </div>
+            <div class="character-wrapper">
+                <img src="image/banner.png" alt="Astra Character" class="character-img">
+            </div>
+        </section>
+
+        <section class="content-grid">
+            
+            <div class="card artwork-section">
+                <h3 class="section-title">Muclips 〉</h3>
+                <div class="art-items">
+                    <div class="art-item video-trigger" data-video-id="MJtSG1682H">
+                        <div class="thumb-container">
+                            <img src="image/sum1-1.jpg" alt="Artwork 1">
+                            <div class="play-overlay">▶</div>
+                        </div>
+                        <span class="art-tag">@직접 불러주는 땃쥐송</span>
+                    </div>
+
+                    <div class="art-item video-trigger" data-video-id="tHNQ3PFF4R">
+                        <div class="thumb-container">
+                            <img src="image/sum2-1.jpg" alt="Artwork 2">
+                            <div class="play-overlay">▶</div>
+                        </div>
+                        <span class="art-tag">@뮤이니 치즈버거송</span>
+                    </div>
+
+                    <div class="art-item video-trigger" data-video-id="yAdCIwhZGC">
+                        <div class="thumb-container">
+                            <img src="image/sum3.png" alt="Artwork 2">
+                            <div class="play-overlay">▶</div>
+                        </div>
+                        <span class="art-tag">@돈 없으면 벤</span>
+                    </div>
+                </div>
+                <a href="https://chzzk.naver.com/2fbcc99a2def03a177ba186835f0d49d/clips?filterType=ALL&orderType=POPULAR" target="_blank" style="text-decoration: none;">
+                    <button class="btn-viewmore">View More➜</button>
+                </a>
+            </div>
+
+            <div class="card search-section">
+                <h3 class="section-title">Muyin Search</h3>
+                <ul class="search-list">
+                    <li class="search-item active" data-answer="2024년 5월 12일에 처음 만났어요! 🐹">🪻첫방송일🪻</li>
+                    <li class="search-item" data-answer="2024년 12월 15일에 데뷔했어요! 🎥">🪻데뷔일🪻</li>
+                    <li class="search-item active" data-answer="뮤인의 MBTI는 낯가리는 'INFJ'입니다! 💜">🪻MBTI🪻</li>
+                    <li class="search-item" data-answer=" 1월 22일이 생일이에요.🎂">🪻Birthday🪻</li>
+                    <li class="search-item active" data-answer="• 신지훈 - 우리의 얘기를 쓰겠소
+                    • 택우 - 내일의 내게 무엇을 말해야하나
+                    • 연서 - 아이">🪻뮤플리🪻</li>
+                    <li class="search-item" data-answer="• 마우스 - 로지텍 지슈라2c
+                    • 마이크 - fifine 다이나믹 AM8 
+                    • 키보드 - 독거미 세이야축
+                    • 마우스패드 - AXGAMINGPUNK 게이밍 마우스패드 DRIZZLE 컨트롤 슬라이딩 아즈 핑크">🪻muyin's gear🪻</li>
+                </ul>
+            </div>
+
+            <div id="infoModal" class="modal">
+                <div class="modal-content info-modal-content">
+                    <span class="close-info-modal">&times;</span>
+                    <div class="info-body">
+                        <h2 id="infoTitle" style="margin-bottom: 20px; color: #9b87ce;">Information</h2>
+                        <p id="infoText" style="font-size: 1.1rem; line-height: 1.6;"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-detail-section">
+                <div class="mini-cards">
+                    <div class="mini-card"><img src="image/mubaby1.png" alt="chibi"></div>
+                    <div class="mini-card"><img src="image/mubaby2.png" alt="chibi"></div>
+                </div>
+                <div class="main-profile-card">
+                    <span class="profile-handle">💜땃쥐줴줴이오호이야💜</span>
+                    <img src="image/art1.jpg" alt="Astra Portrait">
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-video-container" id="modalVideoBody">
+                </div>
+        </div>
+    </div>
+
+    <!-- 팬레터 카드 모달 -->
+    <div id="fanModal" class="modal">
+        <div class="modal-content" style="background: transparent; box-shadow: none; max-width: 900px;">
+
+            <span class="close-fan-modal"
+                style="position:absolute; top:-10px; right:10px; font-size:40px; color:white; cursor:pointer;">
+                &times;
+            </span>
+
+            <div class="card-slider">
+
+                <!-- 카드 1 -->
+                <div class="flip-card">
+                    <div class="flip-inner">
+                        <div class="flip-front">
+                            <img src="image/card2.png">
+                            <div class="fan-name">동겸</div>
+                            <div class="card-btn">click</div>
+                        </div>
+                        <div class="flip-back">
+                            <div class="letter"> 동겸💌<br>김 뮤인 2주년 축하한다~<br> 앞으로 100만팔 까지 가보자~</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 카드 2 -->
+                <div class="flip-card">
+                    <div class="flip-inner">
+                        <div class="flip-front">
+                            <img src="image/card.png">
+                            <div class="fan-name">호세키</div>
+                            <div class="card-btn">click</div>
+                        </div>
+                        <div class="flip-back">
+                            <div class="letter"> 호세키💌<br>2주년 축하한다 대지야! <br>10만팔부터 도전하자!🤗</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 카드 3 -->
+                <div class="flip-card">
+                    <div class="flip-inner">
+                        <div class="flip-front">
+                            <img src="image/card2.png">
+                            <div class="fan-name">베기</div>
+                            <div class="card-btn">click</div>
+                        </div>
+                        <div class="flip-back">
+                            <div class="letter"> 베기💌<br>뮤인님,<br> 2주년 정말 축하드립니다😊<br>항상 좋은 에너지로 즐거운 방송<br> 해주셔서 감사드리고,<br>앞으로도 지금처럼 <br>오래 함께해주셨으면 좋겠습니다!<br>늘 응원하고 있습니다 🙌 </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 카드 4 -->
+                <div class="flip-card">
+                    <div class="flip-inner">
+                        <div class="flip-front">
+                            <img src="image/card.png">
+                            <div class="fan-name">잠탱이낙지</div>
+                            <div class="card-btn">click</div>
+                        </div>
+                        <div class="flip-back">
+                            <div class="letter">잠탱이낙지💌<br>뮤인넴 방송 벌써 2년째!!<br>어쩌다 뮤인넴 한테 흘러들어와서 <br>1년이 넘게 뮤인넴을 보고 있지만<br> 처음부터 한결같이 귀여워서 <br>감사합니다 ㅎㅎ <br>맨날 귀여운 뮤인님<br>앞으로도 귀여운 뮤인님으로<br> 남아주세요<br> (표독뮤인도 좋아<br> 무서운 뮤인도좋아 <br>그냥 뮤인이 좋아 헤헤헿헿)<br> PS.뮤바인보 </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 카드 5 -->
+                <div class="flip-card">
+                    <div class="flip-inner">
+                        <div class="flip-front">
+                            <img src="image/card2.png">
+                            <div class="fan-name">상큼오렌지 </div>
+                            <div class="card-btn">click</div>
+                        </div>
+                        <div class="flip-back">
+                            <div class="letter">상큼오렌지💌<br>2주년 축하드려요 뮤인님!!!</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 카드 6 -->
+                <div class="flip-card">
+                    <div class="flip-inner">
+                        <div class="flip-front">
+                            <img src="image/card.png">
+                            <div class="fan-name">라월</div>
+                            <div class="card-btn">click</div>
+                        </div>
+                        <div class="flip-back">
+                            <div class="letter">라월💌<br>어...음...어... 일단 2주년<br>정말 정말 축하드리구요 <br>알게된지 이제 2달 좀 넘었나.... <br>그렇게 오래되지 않았는데도 푹 빠져서 찾아보는 방송은<br> 뮤인님이 처음인거 같아요..ㅎㅎ<br> 앞으로도 오래오래 <br>같이 배그도 하고 <br>얘기도 하고<br> 즐겁게 놀면 좋을거 같아용<br> 2주년 다시 한번 축하드리구....<br>김뮤인......<br>마이 아낀다!!!</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 카드 7 -->
+                <div class="flip-card">
+                    <div class="flip-inner">
+                        <div class="flip-front">
+                            <img src="image/card2.png">
+                            <div class="fan-name">우주</div>
+                            <div class="card-btn">click</div>
+                        </div>
+                        <div class="flip-back">
+                            <div class="letter">우주💌<br>안녕하세요 뮤인님 우주 입니다!<br>방송 2주년을 맞이하셨네요!<br>진심으로 축하드립니다.<br>그동안 지치고 힘들때 뮤인님 방송으로 많은 힘을 받았네요.<br>앞으로도 건강한 방송<br> 쭈욱 해주시고<br>행복한 방송이 되길 뒤에서 <br>응원하겠습니다.<br>다시한번 2주년 축하드립니다!<br> -뮤바인보-</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 카드 8 -->
+                <div class="flip-card">
+                    <div class="flip-inner">
+                        <div class="flip-front">
+                            <img src="image/card.png">
+                            <div class="fan-name">성덕</div>
+                            <div class="card-btn">click</div>
+                        </div>
+                        <div class="flip-back">
+                            <div class="letter">성덕💌<br>"뮤인이 방송 2주년 된 거 축하해~<br>배그 납치 하면서 알게 됐는데<br>벌써 2년 가까이 됐구나~<br>앞으로도 방송 꾸준히 열심히 하고<br>절대 배그 놓지말고<br>내 배그 장난감 해줘~"</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 카드 9 -->
+                <div class="flip-card">
+                    <div class="flip-inner">
+                        <div class="flip-front">
+                            <img src="image/card2.png">
+                            <div class="fan-name">유키라떼</div>
+                            <div class="card-btn">click</div>
+                        </div>
+                        <div class="flip-back">
+                            <div class="letter">유키라떼💌<br>뮤인님의 2주년을 축하해<br>방송유입된지 얼마안됬지만<br>시간약속 지키면서<br> 웃으면서 방송하는<br>모습이 보기좋아요.<br>때로는 표독해지고 시무록해하지만<br>초심변하지 않는 방송 <br>오래오래 보고싶어요.<br>앞으로도 열심히 방송해주세요.<br>3주년을 향해 달려라 <br>뮤땃쥐~</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 카드 10 -->
+                <div class="flip-card">
+                    <div class="flip-inner">
+                        <div class="flip-front">
+                            <img src="image/card.png">
+                            <div class="fan-name">민트개좋아</div>
+                            <div class="card-btn">click</div>
+                        </div>
+                        <div class="flip-back">
+                            <div class="letter">민트개좋아💌<br>뮤인님 뭐 2주년동안봤지만<br>성장하시고있어요<br>급하게하지말고 천천히해요<br>그러다 급체한다 천천히해봐요 <br>그리고 뭐 요새는 자주안가지만 <br>쩔수죠....노력해볼께요 <br>홧팅이에요! </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 카드 11 -->
+                <div class="flip-card">
+                    <div class="flip-inner">
+                        <div class="flip-front">
+                            <img src="image/card2.png">
+                            <div class="fan-name">정훈 </div>
+                            <div class="card-btn">click</div>
+                        </div>
+                        <div class="flip-back">
+                            <div class="letter">정훈💌<br>뮤인님 알게 된지 얼마 안되지만<br>2주년 축하드려용<br>앞으로도 아푸지말고 <br>행복하게 방송하세용!</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 카드 12 -->
+                <div class="flip-card">
+                    <div class="flip-inner">
+                        <div class="flip-front">
+                            <img src="image/card.png">
+                            <div class="fan-name">빵까룽</div>
+                            <div class="card-btn">click</div>
+                        </div>
+                        <div class="flip-back">
+                            <div class="letter">빵까룽💌<br>뮤인님의 반창고 빵까룽입니당<br>가벼운 마음으로 들어왔던 방송에<br>이렇게 깊게 빠지게 될 줄은 <br>몰랐는데,<br>점점 예뻐지는 모습에<br> 요새는 미소가<br> 떠나질않는 것 같아용<br>2주년 진심으로 축하드려요!<br>두번의 겨울을 지나 꽃들이<br>만개하는 이번 달 처럼<br>뮤인님의 앞날도<br>아름답게 피어나길 기원해용<br>울고 웃는 모든 순간이 행복했지롱<br>사랑을 담아  -빵-</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 카드 13 -->
+                <div class="flip-card">
+                    <div class="flip-inner">
+                        <div class="flip-front">
+                            <img src="image/card2.png">
+                            <div class="fan-name">다비</div>
+                            <div class="card-btn">click</div>
+                        </div>
+                        <div class="flip-back">
+                            <div class="letter">다비💌<br>자기야 안냥?<br>내가 이걸 만드는건 알았겠지만..<br>팬들 편지가 있는줄 몰랐찌?!<br>마음에 들었으면 좋겠다~ㅎㅎ<br>비록 우리가 알게 된 시간은 짧지만<br> 내가 편하게 해주고<br> 내얘기도 잘들어줘서<br>늘 고마워💙<br>앞으로도 뮤인이 팬으로 <br>또는 뮤인이 친구로 <br>항상 함께 할게~ <br>김뮤인 애정해!! <br>항상 행복하자💜<br> -뮤인이 아픈손가락 다비가- </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        //클립 java
+        const modal = document.getElementById("videoModal");
+        const modalBody = document.getElementById("modalVideoBody");
+        const closeBtn = document.querySelector(".close-modal");
+
+        // Artwork 클릭 시 모달 열기
+        document.querySelectorAll('.video-trigger').forEach(item => {
+            item.addEventListener('click', function() {
+                const videoId = this.getAttribute('data-video-id');
+                
+                // 보안 정책 대응 (parent 설정)
+                let host = window.location.hostname;
+                if (!host || host === "" || host === "null") {
+                    host = "127.0.0.1"; 
+                }
+
+                const videoUrl = `https://chzzk.naver.com/embed/clip/${videoId}?autoplay=true&parent=${host}`;
+
+                // 모달 내부에 iframe 생성
+                modalBody.innerHTML = `
+                    <iframe 
+                        src="${videoUrl}" 
+                        title="CHZZK Player"
+                        frameborder="0" 
+                        allow="autoplay; clipboard-write; web-share; fullscreen" 
+                        allowfullscreen>
+                    </iframe>
+                `;
+
+                // 모달 표시
+                modal.style.display = "block";
+                document.body.style.overflow = "hidden"; // 배경 스크롤 방지
+            });
+        });
+
+        // 닫기 버튼 클릭 시 모달 닫기
+        closeBtn.onclick = function() {
+            modal.style.display = "none";
+            modalBody.innerHTML = ""; // 영상 제거 (소리 끄기)
+            document.body.style.overflow = "auto";
+        }
+
+        // 모달 바깥 배경 클릭 시 닫기
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+                modalBody.innerHTML = "";
+                document.body.style.overflow = "auto";
+            }
+        }
+
+
+// Muyin Search java
+const infoModal = document.getElementById("infoModal");
+const infoText = document.getElementById("infoText");
+const infoTitle = document.getElementById("infoTitle");
+const closeInfoBtn = document.querySelector(".close-info-modal");
+
+// Search Item 클릭 이벤트
+document.querySelectorAll('.search-item').forEach(item => {
+    item.addEventListener('click', function() {
+        const title = this.innerText;
+        const answer = this.getAttribute('data-answer'); // 속성에서 답변 추출
+
+        infoTitle.innerText = title;
+        infoText.innerHTML = answer;
+
+        infoModal.style.display = "block";
+        document.body.style.overflow = "hidden";
+    });
+});
+
+// 정보 모달 닫기
+closeInfoBtn.onclick = function() {
+    infoModal.style.display = "none";
+    if (modal.style.display !== "block") { // 영상 모달이 켜져있지 않다면 스크롤 복구
+        document.body.style.overflow = "auto";
+    }
+}
+
+// 배경 클릭 시 닫기 (기존 window.onclick에 통합하거나 추가)
+window.addEventListener('click', function(event) {
+    if (event.target == infoModal) {
+        infoModal.style.display = "none";
+        if (modal.style.display !== "block") {
+            document.body.style.overflow = "auto";
+        }
+    }
+});
+
+
+// 팬레터 모달
+const fanModal = document.getElementById("fanModal");
+const openFanBtn = document.querySelector(".read-more");
+const closeFanBtn = document.querySelector(".close-fan-modal");
+
+// 열기
+openFanBtn.addEventListener("click", function(e){
+    e.preventDefault();
+    fanModal.style.display = "block";
+    document.body.style.overflow = "hidden";
+});
+
+// 닫기
+closeFanBtn.onclick = function(){
+    fanModal.style.display = "none";
+    document.body.style.overflow = "auto";
+    document.querySelectorAll(".flip-card").forEach(c => c.classList.remove("active"));
+};
+
+// 카드 뒤집기 (개별)
+document.querySelectorAll(".card-btn").forEach(btn => {
+    btn.addEventListener("click", function(){
+        const card = this.closest(".flip-card");
+        card.classList.toggle("active");
+    });
+});
+
+// 바깥 클릭 닫기
+window.addEventListener("click", function(e){
+    if(e.target === fanModal){
+        fanModal.style.display = "none";
+        document.body.style.overflow = "auto";
+    }
+});
+    </script>
+
+</body>
+</html>
