@@ -540,7 +540,7 @@ body {
 
 /* 앞/뒤 */
 .flip-front,
-.flip-back {
+.flip-back {    
     position: absolute;
     width: 100%;
     height: 100%;
